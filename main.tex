@@ -1,0 +1,356 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[linktocpage=true]{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=violet,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    citecolor=blue,
+    }
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{blindtext}
+\usepackage{titlesec}
+
+\usepackage[backend=biber, style=phys, sorting=none, maxnames=1, minnames=1]{biblatex}
+\addbibresource{Bibl.bib}
+	
+% \usepackage[linktocpage=true]{hyperref}
+
+\usepackage{fancyvrb}
+
+\usepackage[a4paper, margin=1.1in]{geometry} % Adjust margins here
+
+\title{The AGATA-PRISMA Masterdoc}
+\author{Ida Plahter Rosenqvist}
+\date{January 2025}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\pagebreak
+
+\section{The AGATA-PRISMA Setup}
+For a description of the AGATA-PRISMA experimental setup, see the master's degree dissertation from Elia Pilotto: \emph{In-beam commissioning of the AGATA-PRISMA setup at Legnaro National Laboratories} (2021).\\\\
+For a description of the AGATA data processing, see the doctoral thesis from Rosa Vidal : \emph{Collectivity along N=50: Nuclear Structure studies on the neutron-magic nuclei 92Mo and 94Ru with AGATA and VAMOS++} (2019). \\\\
+For a brief description of the PRISMA analysis, see the presentation at the AGATA analysis workshop 2023 by Elia Pilotto: \emph{The PRISMA magnetic spectrometer: analysis and data-processing} (2023).\\\\
+For a brief description of the PRISMA spectrometer, see the \href{https://pdf.sciencedirectassets.com/271584/1-s2.0-S0375947400X03144/1-s2.0-S0375947401015780/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBUaCXVzLWVhc3QtMSJIMEYCIQCRHpLF752rX6FV98MG74Br%2FOwOBcpX6yD1ddcGS8dSogIhALw%2BCaK68OE4q%2F6Cdxw0tkpWl%2Bi4lobnjDAMbgD3WJloKrIFCC0QBRoMMDU5MDAzNTQ2ODY1IgwMev7XIuiKrEucM2sqjwWtmOVcx3R3%2Fmi1N0QLMzkty6y2NG4iTH21bMxPIwZ8bQsn8Kg3vHjRCiynMJC%2FlktTnzFi2XkxrC%2FoK4kKi%2B8iimicv2aD8Nizb2825kJ%2FRqL1m1CyxalJMwzkDry9N5s67QGkkBBkVpwSGUaqE9ItwMX9RaUYB8rbZ4XGQgEbEEu0ieJJsUB4r719gHyZT6a2tcA7tPByMY4yMQdYSN%2BLrS6zSPIlUyVI5xwpp6IhuzKl%2BAbTeT6MMobR4USSvpO%2F0%2B9YpoSX%2FPILnulAL%2BEsYUV5nnY0UikYVkB%2FqUPnuFdt0bYK7prGjl8hrlFYOe%2BEJAVweOPBvdNjb%2FevxjTkPbvHhbeIGwQr0UWRC490vEDlzcIyLTqbhdrktht9DyDgGyydHMcLBgPuKk321kQxElTUijRAq5cl690oxyiaUEAW1DqwuwTVrVn56VGNOgTP6Tg8S7UG1Xsq0cEgz8dGb%2FGoZxtboOTgIzU%2FUu2Fgd5c6yfxdH2R8E0gjw1wPRv08lcaxfDL4S6rQRE4PkDSoybPDlxQeOEnlgud1vEfQ0Q1%2BzXoMyX2lSVbcS%2BmIyILmRk1f2Q05tYbufg6wGWfHSuWsLw8sOQlAGYYItykkc0OuMKu7ljApViwZcxnK5TeHn9JUN6w1TPzD2yvjxGZvvvUNhjb1%2BGWOwVPTr2XInX3RVQ8TemjoR%2FpmnOUwujD7THjlAjoTGUKzBI8Zb27vahSWoXKNu9J3n6DuvJ8WzrRTwnVtasxmPX50%2FGHUu7sIF1jXeYDiBiBbohTO%2FU7mddA3iK6GXTZXzMUo9AVuC8agGHRfIKiwBCwX3WzQ%2Ba03XCQ4ZiiCfjGsNIizmDUEIpcuCpxp0DntsjbKxRSMN%2BMiL0GOrAB%2Fm%2BcgaLg9cWzCaB7oMuYF7AhoIX569krU7XbygoyOo1KAZnBHXgaKhUQn%2BO9d6Y5fMmHUvRYIx36AqFijMNCGNIWpD6Gd06up%2BGh5Oc95Dn9L2k8UdLL96eJgqI%2F%2FZXyV8mbpQxIqqHX1RiUL%2BdH3DNKrrPyn%2BpN9gVNkIa3HX9PDOnv1pv9opm7Wz4jyx0Y3nt4zbPnGEBqnrUQrqleQGiMRPIoLRGT4XnjVmN%2BVmI%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250204T130706Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY2FN4ZH4P%2F20250204%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=79810e05c70bf1c1a28563b200485d51f810717edb408ff044b416d19e27978f&hash=18f98c862de144d3d593c67ea9d2b62f84c7ea14942adcab9a479c72e21c7406&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0375947401015780&tid=spdf-bd4de81f-7ec8-41c9-8c4e-84fa18b7c8a3&sid=18e2e20d8a387447448b02b82a5197057117gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=14095e500601015e075808&rr=90cae1b9fcf15f0a&cc=no}{paper} by A.M. Stefanini et. al. : \emph{The heavy-ion magnetic spectrometer PRISMA} (2002). \\\\
+For a description of the MCP detector used in PRISMA, see the paper by G. Montagnoli et. al. : \emph{The large-area micro-channel plate entrance detector of the heavy-ion magnetic spectrometer PRISMA} (2005).\\\\
+For a general description of a PPAC see paper by H. Kumagai et. al. : \emph{Development of Parallel Plate Avalanche Counter (PPAC) for BigRIPS fragment separator} (2013).\\\\
+For a description of the MWPPAC used in PRISMA see the paper by S. Beghini et. al. : \emph{The focal plane detector of the magnetic spectrometer PRISMA} (2005).
+
+\subsection{PRISMA}
+\textcolor{red}{\textbf{Positive charges toward the cathode and negative charges toward the anode.}}\\
+Se page 183 in Leo for MCP description.
+\\\\
+The purpose of Prisma is to identify the incoming ions in velocity $\vec{\beta}$, atomic number $Z$, and mass number $A$, through combining the different information obtained from all of  its components.
+The spectrometer setup in its entirety can be seen in Figure \ref{fig:SetupPRISMA}.
+\\\\ 
+The MCP detector is the first detector after the target. It measures the x- and y-positions of the incoming particle and the time of collision for the time-of-flight measurements.
+After the MCP detector, the beam's magnetic rigidity is measured by its deflection inside the dipole field. 
+After the magnetic field, the beam entered the MCPPAC, where position and time are measured.
+The position measurements from the MCP and PPAC help recreate the particle's trajectory as the magnetic field bends it.
+The PPAC measurement triggers the event, and because of various delay lines, the signal from the MCP is recorded after the signal from the PPAC. 
+The TOF is, therefore, measured in the reverse way.
+once TOF and the particle trajectory are known, the particle's velocity can be found.
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Figures/PRISMA/PRISMASetup.pdf}
+    \caption{The complete PRISMA setup. Taken from \url{https://www.lhc-closer.es/taking_a_closer_look_at_lhc/0.magnetic_multipoles}.}
+    \label{fig:SetupPRISMA}
+\end{figure}
+
+\subsubsection{Magnets and optics}
+After the MCP detector, the particle hits a field produced by a quadrupole magnet with a length of 50 cm.
+The quadrupole magnet focuses the beam in the vertical plane; see Figure \ref{fig:QuadMag} for an example of quadrupole focusing and Figure \ref{fig:QuadMagField}, for an example of the magnetic field and force field inside a magnetic quadrupole.
+After the quadrupole field, the particle was bent inside a dipole magnetic field to measure the 
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.4\linewidth]{Figures/PRISMA/MagnetsOptics/QuadrupoleMagnet.png}
+    \caption{The effect of a quadrupole magnet on a positive charge. Taken from \url{https://www.lhc-closer.es/taking_a_closer_look_at_lhc/0.magnetic_multipoles}.}
+    \label{fig:QuadMag}
+\end{figure}
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Figures/PRISMA/MagnetsOptics/QuadrpoleMagnetsField.pdf}
+    \caption{The fields created in a quadrupole magnet. Taken from \url{https://cds.cern.ch/record/2743947/files/Wilson-Holzer2020_Chapter_BeamDynamics_2.pdf}.}
+    \label{fig:QuadMagField}
+\end{figure}
+
+\subsubsection{MCP - micro-channel plate entrance detector}
+The MCP detector consists of several rectangular micro-channel plates.
+Micro-channel plates are slabs of resistive material, often lead glass, with several channels of material removed (typically 10-100$\mu$m in diameter).
+The channels are often covered in a thin layer of semiconducting material to ease the release of electrons.
+The flat end surfaces of the plates are often covered in a metallic alloy to allow a potential difference to be applied across the micro-channels.
+The channels are often cut at a slight angle, and if a strong electric field is applied across the MCP, the micro-channels function as continuous-dynode electron multipliers.
+Because the channels are angles, any particle entering a channel is guaranteed to hit the wall of the MCP, thus producing electrons.
+The electrons hitting the dynode wall produce many electrons and magnify the original signal.
+The electrons exit at the end of the MCP and can be collected on a position-sensitive anode.
+\\\\
+Two angled plates can be placed next to each other in what is called a chevron configuration.
+The micro-channel plates are smaller in dimension when in a chevron configuration, so timing is much better as the electrons have to travel a shorter distance.
+Transit time is reduced from tens of nanoseconds to a couple of nanoseconds, leading to a timing resolution below 100 ps.
+The size also makes the plates less affected by magnetic fields.
+The angle between the channels also reduces ion feedback.
+\textcolor{red}{The gain of an MCP is very noisy, meaning that two identical particles detected in succession will often produce wildly different signal magnitudes. The temporal jitter resulting from the peak height variation can be removed by using a constant fraction discriminator (From Wikipedia).}
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Figures/PRISMA/MCP/Discrete_and_Continuous_Dynode_Systems.jpg}
+    \caption{A continuous dynode vs. a discrete dynode. From Wikipedia, "Electron multiplier".}
+    \label{fig:contDyn}
+\end{figure}
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.4\linewidth]{Figures/PRISMA/MCP/MCPChevron.pdf}
+    \caption{MCP Chevron configuration. From Leo.}
+    \label{fig:MCPChevron}
+\end{figure}
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Figures/PRISMA/MCP/MCPSignal.pdf}
+    \caption{Visualization of a signal in an MCP detector. From \emph{High spatial resolution neutron sensing microchannel plate detectors} by O. H. Siegmund et. al (2007).}
+    \label{fig:MCPSignal}
+\end{figure}
+\\\\
+The actual MCP employed in PRISMA 
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Figures/PRISMA/MCP/MCPPrisma.pdf}
+    \caption{Visualization of MCP used in PRISMA. From paper by G. Montagnoli et. al. \emph{The large-area micro-channel plate entrance detector of the heavy-ion magnetic spectrometer PRISMA} (2005).}
+    \label{fig:MCPPrisma}
+\end{figure}
+Properties of the MCP used in PRISMA \cite{PRISMAFocalPlane}:\\
+\begin{itemize}
+    \item solid angle 
+\end{itemize}
+\textcolor{blue}
+{Questions
+\begin{itemize}
+    \item Why is the resistive material glass containing lead.
+    \item Why does a chevron configuration necessarily imply a smaller plate, with a smaller distance for the electrons to travel?
+    \item Why does a smaller plate mean that the plate is less affected by a magnetic field?
+    \item Why do the angles in a chevron configuration ensure less ion feedback?
+    \item Why is the gain in an MCP so noisy?
+\end{itemize}
+}
+% \begin{description}
+%    \item[What happens to projectiles that hit the glass and not the microchannels?] In the MCP we detect a projectile because it hits a foil (usually carbon?) some distance away from the actual microchannel plates.
+%    When it hits the foil, electrons are released and accelerated using an electric field towards the plates, while a magnetic field parallel to the electric one keeps the position information by spiralling the electrons.
+%    \item[Why are spiralling electrons more likely to keep their position information?] 
+%    \item[What is bias voltage]
+%    \item[How does a position sensitive anode work?]
+% \end{description}
+
+
+\subsubsection{MWPPAC - multi-wire parallel plate avalanche counter}
+The PPACs are used mainly for measuring the time and position of the reaction products, similarly to the the MCP detector 
+The MWPPAC is utelised to measure magnetic rigidity $\rho \beta$, where $\beta$ is 
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Figures/PRISMA/PPAC/TownsendAvalanche.pdf}
+    \caption{Visualization of a Townsend avalanche. From Wikipedia, "Townsend discharge".}
+    \label{fig:Townsend}
+\end{figure}
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Figures/PRISMA/PPAC/PPACAnodeCathode.pdf}
+    \caption{Visualization of an anode and a cathode plate in a PPAS. From \emph{Development of Parallel Plate Avalanche Counter (PPAC)
+for BigRIPS fragment separator} by H. Kumagai et. al. (2013).}
+    \label{fig:PPACAnodeCathode}
+\end{figure}
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Figures/PRISMA/PPAC/AnodeWireScem.pdf}
+    \caption{Visualization of the anode wire in the PRISMA PPAC. From \url{https://indico.in2p3.fr/event/34092/contributions/144798/attachments/89978/136382/AgataAnalysisWS2025_PrismaIntroduction.pdf}}
+    \label{fig:PrismaAnodeWireSchem}
+\end{figure}
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Figures/PRISMA/PPAC/AnodeWireEnergyThresholds.pdf}
+    \caption{Visualization of an anode wire in the PRISMA PPAC, with thresholds. From \url{https://indico.in2p3.fr/event/34092/contributions/144798/attachments/89978/136382/AgataAnalysisWS2025_PrismaIntroduction.pdf}}
+    \label{fig:PrismaAnodeWireThresh}
+\end{figure}
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Figures/PRISMA/PPAC/PPACDelayLine.pdf}
+    \caption{Visualization of the delay line in a PPAC. From \emph{Development of Parallel Plate Avalanche Counter (PPAC)
+for BigRIPS fragment separator} by H. Kumagai et. al. (2013).}
+    \label{fig:PPACDelayLine}
+\end{figure}
+
+\subsection{AGATA}
+
+\pagebreak
+
+\section{Lifetime Measurements in Neutron-Rich Nuclei}
+See the doctoral thesis of Pellumaj Julgen : \emph{Study of the collectivity of intruder states in 83Se and
+development of a new technique to measure lifetimes
+in the N=126 region} (2023).
+
+\pagebreak
+
+
+\section{Running Analysis Programs}
+
+\subsection{Installation of the Analysis Programs}
+Install the
+\href{https://baltig.infn.it/gamma/agataselector}{agataselector},
+\href{https://agata.pages.in2p3.fr/handbook/install-P1/install/}{gammaSoftware} and the Prismafilters, Prisma\_library and PrismaOnlinePackage from the 
+\href{https://baltig.infn.it/prisma}{PRISMA Software}.
+\\
+\\
+Optional:
+Install \href{https://cubix.in2p3.fr/install/}{Cubix} for viewing spectra.
+\\\\
+Not really optional:
+Install the TkT spectra viewer. If you do not have a Windows system you will need a Windows emulator like \href{https://gitlab.winehq.org/wine/wine/-/wikis/Download}{Wine}, and you will find the TkT executable in the directory \textcolor{MidnightBlue}{/gammaSoftware/agapro/zUseful/}
+
+\subsection{Running Replays of Data}
+
+\subsection{Running AgataSelector}
+
+
+\pagebreak
+
+\section{Calibration of the PRISMA Magnetic Spectrometer}
+There exist two main ways of calibrating PRISMA.
+One involves using the PrismaFilters 
+
+\subsection{Calibrating using PrismaFilters}
+Navigate to the experiment directory, for example:
+\begin{Verbatim}[formatcom=\color{MidnightBlue}]
+/Users/idarosenqvist/Desktop/Academics/Codes/Installations/PRISMA/EXP_PHD/PrismaAnalysis
+\end{Verbatim}
+All configuration files are contained inside the directory \textcolor{MidnightBlue}{/PrismaConf/}, and all have extensions \textcolor{MidnightBlue}{*.conf}. Here, you will also find the directory with the bananas \textcolor{MidnightBlue}{/ban/} and calibrations \textcolor{MidnightBlue}{/cal/}.\\\\
+The lists of runs to analyze are located in \textcolor{MidnightBlue}{/Runs/inListFiles/}. To generate a list file (for example, from run 233), run the script
+\begin{Verbatim}[formatcom=\color{OliveGreen}]
+./generateList.sh 233
+\end{Verbatim}
+which produces the file \textcolor{MidnightBlue}{ inList 0233.txt}. The good runs can be found in the file \textcolor{MidnightBlue}{/Spreadsheets/Exp22.xlsx} in this latex document (the first good run is 243). The analysis code is run in the directory \textcolor{MidnightBlue}{/PrismaAnalysis/} as follows:
+\begin{Verbatim}[formatcom=\color{OliveGreen}]
+./RunAnalysis --options \#runs
+\end{Verbatim}
+for an explanation of the arguments, run:
+\begin{Verbatim}[formatcom=\color{OliveGreen}]
+./RunAnalysis -h
+\end{Verbatim}
+For example, if you want to analyse run number 243 using 2 threads and analysing only the data from Prisma (so not including the data from the selector AGATA), you run the following code:
+\begin{Verbatim}[formatcom=\color{OliveGreen}]
+./RunAnalysis 243 --mode 1 --nrthr 2
+\end{Verbatim}
+Once the analysis code has been run, look in the directory \textcolor{MidnightBlue}{/PrismaAnalysis/Out} for \textcolor{MidnightBlue}{*.root} output files.
+
+\subsection{Calibrating using the AgataSelector}
+Navigate to the experiment directory, for example:
+\begin{Verbatim}[formatcom=\color{MidnightBlue}]
+/agataselector/User/EXP/EXP_016
+\end{Verbatim}
+Find the configuration file in:
+\begin{Verbatim}[formatcom=\color{MidnightBlue}]
+/Conf/selector.conf
+\end{Verbatim}
+
+\subsubsection{Running Replays}
+
+
+
+
+\subsection{Calibrating the MCP}
+
+\pagebreak
+
+\section{Calibrating AGATA}
+
+
+\printbibliography
+% Check calibration in /Users/idarosenqvist/Desktop/Academics/Codes/Installations/PRISMA/EXP_PHD/PrismaAnalysis:
+% root -l
+% .L CheckCal.C
+% DrawAll("Runs/run_0243/Tree_0000.root","Out/sum-232_1.root")
+
+% Alll threshold, calibration and bananas are in PrismaConf /cal/, /thresholds/, /ban/
+
+
+% Fix mcp banana in RawMCPY vs RawMCPX, save Name "mcp_cut"
+% Save as TCut: "mcp_cut.root"
+% TCutToBan("mcp_cut.root","mcp_banana.ban")
+% copy new banana to /ban/, overwrite old one
+
+
+% MCP calibration inside /Users/idarosenqvist/Desktop/Academics/Codes/Installations/PRISMA/EXP_PHD/PrismaAnalysis/MCP
+% .L MCP_cal.C
+
+% Wix template to have the correct numbers.
+
+% Template.dat:
+% pos     x_mm  y_mm  x_chan  y_chan
+% center  0     0     1500    2500
+% tl_cal  -21.5 26.5  2000    3000
+% tr_cal  21.5  26.5  1000    3000
+% bl_cal  -21.5 -26.5 2000    2000
+% br_cal  21.5  -26.5 1000    2000
+
+% Remember to switch left and right!
+
+% MCP_cal("Template.dat")
+
+% Get output:
+
+% Minuit2Minimizer: Minimize with max-calls 1000000 convergence for edm < 0.001 strategy 1
+% Warning in <Minuit2>: MnPosDef Matrix forced pos-def by adding to diagonal 0.00479908
+% Warning in <Minuit2>: MnPosDef Matrix forced pos-def by adding to diagonal 0.00479702
+% Warning in <Minuit2>: Minuit2Minimizer::Minimize Covar was made pos def
+% Minuit2Minimizer : Valid minimum - status = 1
+% FVAL  = 8.57914869424808613e-08
+% Edm   = 6.06712064013743779e-08
+% Nfcn  = 11402
+% x0    = 0.0188997    +/-  0.00154359
+% x1    = -5.4258e-08  +/-  0.000389106
+% y0    = -3.96931e-07     +/-  0.0132793
+% y1    = 0.740146     +/-  0.0258983
+% calxa     = 64.4984  +/-  3.3431
+% calxb     = -2.27507     +/-  0.185794
+% calxc     = -2.04202e-06     +/-  0.00371215
+% calya     = -132.5   +/-  2.60777
+% calyb     = 0.0716075    +/-  0.00250561
+% angle     = 0    (fixed)
+
+% Raw / Calibrated / Nominal reference points:
+%  1500.00  2500.00     0.00    0.00     0.00    0.00
+%  2000.00  3000.00   -21.50   26.50   -21.50   26.50
+%  1000.00  3000.00    21.50   26.50    21.50   26.50
+%  2000.00  2000.00   -21.50  -26.50   -21.50  -26.50
+%  1000.00  2000.00    21.50  -26.50    21.50  -26.50
+
+% Calibration parameters:
+% sum dist sq: 8.57915e-08
+% mcp_mix_x_0 = 0.0188997
+% mcp_mix_x_1 = -5.4258e-08
+% mcp_mix_y_0 = -3.96931e-07
+% mcp_mix_y_1 = 0.740146
+% cal x: 99 0 3   64.4984 -2.27507    -2.04202e-06
+% cal y: 99 0 2   -132.5  0.0716075
+% rotation_mcp = 0
+
+% Fill inn parameters in /cal/
+
+% in all *mc* files.
+
+% RunAnalysis needs to be performed again after this.
+
+% #
+% Random commands
+
+
+% DrawMCPraw("Runs/run_0232/Tree_0000.root","PrismaConf/ban/mcp_banana.ban",false,1e6)
+
+\end{document}
